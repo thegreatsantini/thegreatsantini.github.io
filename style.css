@@ -200,7 +200,7 @@ a {
 .project-screenshots a {
     display: block;
 }
-.section-projects {
+.section__content {
     max-width: 650px;
     width: 100%;
 }
