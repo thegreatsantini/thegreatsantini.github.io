@@ -1,4 +1,5 @@
 /*//// NAVBAR ////*/
+
 * {
 	box-sizing: border-box;
 }
@@ -9,21 +10,13 @@ body {
 	min-height: 100vh;
 }
 ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 
-h2 {
-    font-size: 3vw;
-    font-weight: bold; 
-}
-
-.about-text p {
-    font-size: 1.5rem;
-    width: 40vmax;
-}
+h2,
 h3,
 a {
 	color: #34495e;
@@ -33,13 +26,17 @@ a {
 	text-decoration: none;
 }
 
+
+
 .logo {
 	margin: 0;
 	font-size: 1.45em;
 }
 
 .main-nav {
-	margin-top: 5px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
 
 }
 .logo a,
@@ -59,6 +56,8 @@ a {
 	color: #718daa;
 }
 
+
+
 .header {
 	padding-top: .5em;
 	padding-bottom: .5em;
@@ -69,10 +68,44 @@ a {
 	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
+	border-radius: 5px;
 }
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		justify-content: space-between;
+		align-items: center;
+    	.header{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+	}
+
+}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
+
+
+
 
 /* //// About Section ////*/
 
@@ -83,7 +116,7 @@ a {
     margin: 5vh 8% 0 8%;
 }
 
-.about-text {
+.about__text {
     font-size: 1.8em;
 }
 
@@ -94,44 +127,15 @@ a {
     height: 100%;
 }
 
-.frame {
-    position: relative;
-    /* width: 600px; */
-    width: 30em;
-    margin: 0 auto;
-    
-    border: 26px #efefef solid;
-    background-color: #f5f5f5;
-    box-shadow: inset -16px 8px 20px rgba(163,155,139,0.36), inset -10px 0px 8px rgba(163,155,139,0.66), inset 3px 0px 8px rgba(163,155,139,0.12), inset 0px -8px 1px rgba(218,216,214,0.4), -28px -6px 60px rgba(163,155,139,0.46),
-    -16px -4px 16px rgba(163,155,139,0.46), 0px -4px 1px rgba(163,155,139,0.14);
-    
-    border-radius: 1px;
-}
 
-.img-wrapper {
-    margin: 54px;
-}
 
-.frame img {
-    position: relative;
-    z-index: 1;
-    display: block;
-    width: 100%;
-}
+.headshot {
+    /* border-radius: 50%;
+    height: 24em; */
 
-.matte {
-    position: absolute;
-    border: transparent solid 54px;
-    width: 100%;
-    height: 100%;
-    box-shadow: inset 0 0 2px rgba(0,0,0,0.18);
-    z-index: 2;
-}
-
-#headshot {
-    display: inline-block;
-    width: 150px;
-    height: 150px;
+    /* display: inline-block; */
+    width: 10em;
+    height: 10em;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -307,32 +311,10 @@ a {
     Media Queries
 ==================================== */
 
-@media (min-width: 769px) {
-	.header,
-	.main-nav {
-		display: flex;
-	}
-	.header {
-		/* flex-direction: column; */
-		/* align-items: center; */
-    	.header{
-		width: 80%;
-		margin: 0 auto;
-		max-width: 1150px;
-	}
-	}
-}
-
-@media (min-width: 1025px) {
-	.header {
-		flex-direction: row;
-		justify-content: space-between\;
-	}
-}
 
 /* Extra, extra small devices (iPhone 5 and older, 320px and down) */
 @media only screen and (max-width: 320px) {
-    .about-text {
+    .about__text {
         font-size: 1em;
         margin-top: 25px;
         padding-right: 0;
@@ -343,13 +325,14 @@ a {
     .headshot {
         border-radius: 5px;
         height: 15em;
+        width: 15em;
         order: -1;
     }
 }
 
   /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 321px) and (max-width: 600px) {
-    .about-text {
+    .about__text {
         font-size: 1em;
         margin-top: 25px;
         padding-right: 0;
@@ -370,7 +353,7 @@ a {
   /* Small devices (portrait tablets and large phones, 600px and up) */
   /*@media only screen and (min-width: 600px) {...} */
 @media only screen and (min-width: 600px) and (max-width: 767px) {
-    .about-text {
+    .about__text {
         font-size: 1.2em;
         margin-top: 25px;
         padding-right: 0;
@@ -383,7 +366,7 @@ a {
   /* Medium devices (landscape tablets, 768px and up) */
   /*@media only screen and (min-width: 768px) {...} */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .about-text {
+    .about__text {
         font-size: 1.5em;
         margin-top: 25px;
         padding-right: 0;
@@ -393,4 +376,5 @@ a {
     }
     .project {
         flex-wrap: wrap;
+}
 }
