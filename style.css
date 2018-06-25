@@ -313,7 +313,7 @@ a {
 
 
 /* Extra, extra small devices (iPhone 5 and older, 320px and down) */
-@media only screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
     .about__text {
         font-size: 1em;
         margin-top: 25px;
@@ -331,7 +331,7 @@ a {
 }
 
   /* Extra small devices (phones, 600px and down) */
-@media only screen and (min-width: 321px) and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .about__text {
         font-size: 1em;
         margin-top: 25px;
@@ -340,11 +340,11 @@ a {
     .opening-section {
         flex-direction: column;
     }
-    .headshot {
+    /* .headshot {
         border-radius: 5px;
         height: 19em;
         order: -1;
-    }
+    } */
     .project {
         flex-wrap: wrap;
     }
@@ -365,7 +365,7 @@ a {
 
   /* Medium devices (landscape tablets, 768px and up) */
   /*@media only screen and (min-width: 768px) {...} */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 851px) and (max-width: 1024px){
     .about__text {
         font-size: 1.5em;
         margin-top: 25px;
@@ -376,5 +376,23 @@ a {
     }
     .project {
         flex-wrap: wrap;
+    }
+    .section__content {
+        padding-left: 30px;
+        padding-top: 30px; 
+    }
+    .section {
+        display: block;
+    }
 }
+
+@media screen and (max-width: 630px) {
+    .skills {
+        flex-wrap: wrap;
+    }
+    .skills__category {
+        margin-bottom: 25px;
+        margin-right: 5px;
+        width: 47%;
+    }
 }
