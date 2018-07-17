@@ -177,14 +177,13 @@ a {
 .project {
     display: flex;
     margin-bottom: 100px;
-    margin-left: -5%;
-    width: 125%;
+    width: 100%;
 }
 .project-details {
     flex-shrink: 0;
     font-size: 0.9em;
     margin-left: 30px;
-    width: 125px;
+    width: 50%;
 }
 .project-name {
     color: #959ca6;
@@ -205,6 +204,12 @@ a {
 .project-screenshots a {
     display: block;
 }
+
+img.project-screenshot {
+    width: 60vw;
+    height: auto;
+}
+
 .section__content {
     max-width: 650px;
     width: 100%;
@@ -264,6 +269,7 @@ a {
     /*margin-right: 20px;*/
     text-transform: uppercase;
     width: 200px;
+    margin-left: 15vw;
 }
 /* .section__title {
     -ms-flex-negative: 0;
@@ -329,6 +335,19 @@ a {
         width: 15em;
         order: -1;
     }
+    .project {
+        flex-wrap: wrap;
+    }
+    img.project-screenshot {
+        width: 100%;
+        height: auto;
+    }
+    
+    .project-details {
+        width: 100%;
+        margin: 0;
+    }
+
 }
 
   /* Extra small devices (phones, 600px and down) */
@@ -349,6 +368,15 @@ a {
     .project {
         flex-wrap: wrap;
     }
+    img.project-screenshot {
+        width: 100%;
+    }
+    
+    
+    .project-details {
+        width: 100%;
+        margin: 0;
+    }
 }
 
   /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -361,6 +389,9 @@ a {
     }
     .headshot {
         height: 19em;
+    }
+    .project {
+        flex-wrap: wrap;
     }
 }
 
@@ -375,16 +406,21 @@ a {
     .headshot {
         height: 19em;
     }
-    .project {
+    /* .project {
         flex-wrap: wrap;
-    }
-    .section__content {
+    } */
+    /* .section__content {
         padding-left: 30px;
         padding-top: 30px; 
-    }
+    } */
     .section {
         display: block;
     }
+
+    /* .project-details {
+        width: auto;
+    } */
+    
 }
 
 @media screen and (max-width: 630px) {
@@ -395,5 +431,28 @@ a {
         margin-bottom: 25px;
         margin-right: 5px;
         width: 47%;
+    }
+}
+
+@media screen and (max-width: 623px) {
+    /* .project-details {
+        width: 40vw;
+        padding-right: 10vw;
+    } */
+
+    #projects {
+        padding: 25px;
+    }
+
+    img.project-screenshot {
+        width: 100%;
+        height: auto;
+    }
+    .project {
+        width: 100%;
+    }
+    .project-details {
+        width: 100%;
+        margin: 0;
     }
 }
