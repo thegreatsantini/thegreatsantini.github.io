@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 body {
-	font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 	line-height: 1.6;
 	margin: 0;
 	min-height: 100vh;
@@ -26,11 +26,11 @@ a {
 	text-decoration: none;
 }
 
-
-
 .logo {
 	margin: 0;
-	font-size: 1.45em;
+    font-size: 1.45em;
+    font-weight: 700;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4);
 }
 
 .main-nav {
@@ -44,7 +44,8 @@ a {
 	padding: 10px 15px;
 	text-transform: uppercase;
 	text-align: center;
-	display: block;
+    display: block;
+    font-family: 'Roboto', sans-serif;
 }
 
 .main-nav a {
@@ -52,8 +53,10 @@ a {
 	font-size: .99em;
 }
 
-.main-nav a:hover {
-	color: #718daa;
+.header a:hover {
+    color: #718daa;
+    text-decoration: none;
+    
 }
 
 
@@ -304,6 +307,8 @@ img.project-screenshot {
     font-size: .9rem;
 }
 
+
+
 /* .skills__container {
     flex-shrink: 0;
     width: 200px;
@@ -343,6 +348,8 @@ img.project-screenshot {
         height: auto;
     }
 
+    
+
     .project-details {
         width: 100%;
         margin: 0;
@@ -365,6 +372,11 @@ img.project-screenshot {
         height: 19em;
         order: -1;
     } */
+
+    .logo a {
+        font-size: 1.5em;
+    }
+
     .project {
         flex-wrap: wrap;
     }
@@ -372,6 +384,7 @@ img.project-screenshot {
         width: 100%;
     }
 
+    
 
     .project-details {
         width: 100%;
