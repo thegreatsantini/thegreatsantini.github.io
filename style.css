@@ -33,6 +33,10 @@ a {
 	text-decoration: none;
 }
 
+.private {
+    text-decoration: line-through;
+}
+
 .logo {
     margin: 0;
     font-size: 1.45em;
@@ -165,6 +169,7 @@ a {
 .fa-github:hover {
     color: #004080;
     font-size: 1.5em;
+    text-decoration: none;
 }
 .fa-linkedin {
     color: #959ca6;
@@ -173,6 +178,7 @@ a {
 .fa-linkedin:hover {
     color: #004080;
     font-size: 1.5em;
+    text-decoration: none;
 }
 .fa-envelope {
     color: #959ca6;
@@ -181,6 +187,7 @@ a {
 .fa-envelope:hover {
     color: #004080;
     font-size: 1.5em;
+    text-decoration: none;
 }
 
 .contact-me {
@@ -208,7 +215,7 @@ a {
 }
 .project-screenshots {
     margin: 0;
-    max-width: 700px;
+    max-width: 75vw;
     overflow: visible;
 }
 .project-screenshots img {
@@ -226,8 +233,7 @@ img.project-screenshot {
 }
 
 .section__content {
-    max-width: 650px;
-    width: 100%;
+    width: 80vw;
 }
 .section-projects-container {
     display: flex;
@@ -266,10 +272,6 @@ img.project-screenshot {
     justify-content: center;
     padding: 100px 170px;
 } */
-.section__content {
-    max-width: 650px;
-    width: 100%;
-}
 
 .about__container a:nth-of-type(2) {
     border-right: 1px rgba(0, 0, 0, 0.25) solid;
@@ -340,16 +342,9 @@ img.project-screenshot {
 
 
 
-/* .skills__container {
-    flex-shrink: 0;
-    width: 200px;
-    margin-right: 70px;
-    color: #007bff;
-    text-transform: uppercase;
-    text-align: right;
-    font-weight: 700;
-    letter-spacing: 2px;
-} */
+.skills__container {
+    margin: 10px;
+}
 /* =================================
     Media Queries
 ==================================== */
@@ -439,9 +434,15 @@ img.project-screenshot {
     }
 }
 
+@media screen and (min-height:640px) {
+    div.about__container {
+        margin-top: 25vh;
+    }
+}
+
   /* Medium devices (landscape tablets, 768px and up) */
   /*@media only screen and (min-width: 768px) {...} */
-@media screen and (min-width: 851px) and (max-width: 1024px){
+  @media screen and (min-width: 1900px){
     .about__text {
         font-size: 1.5em;
         margin-top: 25px;
@@ -449,6 +450,10 @@ img.project-screenshot {
     }
     .headshot {
         height: 19em;
+    }
+
+    div.about__container {
+        margin-top: 25vh;
     }
     /* .project {
         flex-wrap: wrap;
