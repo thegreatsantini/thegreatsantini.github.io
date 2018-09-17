@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:400,700" rel="stylesheet">
+    <link href="lightbox2-master/dist/css/lightbox.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="footer.css" />
 </head>
@@ -119,9 +120,10 @@
         <div class="section__content">
             <div class="project ">
                 <div class="project-screenshots">
-                    <a href="https://platform.workandrise.today" target="_blank">
-                        <img class="project-screenshot" src="images/icon.png" alt="project Dejafood" />
-                    </a>
+                        <a data-lightbox="admin" href="images/admin_part1.gif" target="_blank">
+                            <img class="project-screenshot" src="images/admin_part1.gif" alt="project Dejafood" />
+                        </a>
+                        <a class="hidden" data-lightbox="admin" href="images/admin-part2.gif" target="_blank"></a>
                 </div>
                 <div class="project-details">
                     <div class="project-name">Work & Rise Admin</div>
@@ -149,9 +151,9 @@
             <!-- **************************************** -->
             <div class="project ">
                 <div class="project-screenshots">
-                    <a href="https://platform.workandrise.today" target="_blank">
-                        <img class="project-screenshot" src="images/icon.png" alt="project Dejafood" />
-                    </a>
+                        <a data-lightbox="workandrise" href="images/platform_gif1.gif" target="_blank">
+                            <img class="project-screenshot" src="images/platform_gif1.gif" alt="project Dejafood" />
+                        </a>
                 </div>
                 <div class="project-details">
                     <div class="project-name">Work & Rise</div>
@@ -187,7 +189,7 @@
             <!-- ****************************************************** -->
             <div class="project ">
                 <div class="project-screenshots">
-                    <a href="https://dejafood.herokuapp.com" target="_blank">
+                    <a data-lightbox="dejafood" href="images/dejafood.png" target="_blank">
                         <img class="project-screenshot" src="images/dejafood.png" alt="project Dejafood" />
                     </a>
                 </div>
@@ -218,7 +220,7 @@
             </div>
             <div class="project">
                 <div class="project-screenshots">
-                    <a href="https://jotbox.herokuapp.com" target="_blank">
+                    <a data-lightbox="jotbox" href="images/jotbox_smartmockup.jpg" target="_blank">
                         <img class="project-screenshot" src="images/jotbox_smartmockup.jpg" alt="project Jot Box" />
                     </a>
                 </div>
@@ -247,7 +249,7 @@
             </div>
             <div class="project">
                 <div class="project-screenshots">
-                    <a href="https://inkytweet.herokuapp.com" target="_blank">
+                    <a data-lightbox="inkyTweet" href="images/placeholder.png" target="_blank">
                         <img class="project-screenshot" src="images/placeholder.png" alt="project inkyTweet" />
                     </a>
                 </div>
@@ -278,8 +280,8 @@
             </div>
             <div class="project">
                 <div class="project-screenshots">
-                    <a href="" target="_blank">
-                        <img class="project-screenshot" src="images/digitalnomad.png" alt="project Digital Nomad" />
+                    <a data-lightbox="digitalnomad" href="images/digitalnomad.png" target="_blank">
+                        <img data-lightbox="image-1" class="project-screenshot" src="images/digitalnomad.png" alt="project Digital Nomad" />
                     </a>
                 </div>
                 <div class="project-details">
@@ -321,6 +323,7 @@
             <a href="mailto:lucassantinidev@gmail.com" alt="Email" target="_blank"><i class="footer__icon fas fa-envelope"></i></a>
         </div>
     </footer>
+    <script src="lightbox2-master/dist/js/lightbox-plus-jquery.js"></script>
     <script src="app.js"></script>
 </body>
 
