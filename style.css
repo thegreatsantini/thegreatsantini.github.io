@@ -37,6 +37,10 @@ a {
     text-decoration: line-through;
 }
 
+.hidden {
+    display: none;
+}
+
 .logo {
     margin: 0;
     font-size: 1.45em;
